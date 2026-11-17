@@ -589,7 +589,49 @@ body.no-motion #site .sky-sleigh,body.no-motion .walker,body.no-motion .snow-she
 #portal.clear{transform:none;animation:portalAfter 1.1s both}@keyframes portalAfter{from{opacity:1}to{opacity:0}}
 .painted-scene:after{content:"";pointer-events:none;position:absolute;inset:0;background:radial-gradient(ellipse at 18% 72%,#ffcf6c1c,transparent 38%),radial-gradient(ellipse at 82% 77%,#ffe19820,transparent 43%);mix-blend-mode:screen}
 
-#book[data-theme=map] .book-heading,#book[data-theme=map] .book-toolbar .eyebrow{display:none}#book[data-theme=map] .noel-map-exhibit{padding:0;background:none;min-height:0}#book[data-theme=map] .village-map-image{display:block;width:100%;height:auto;max-height:78dvh;object-fit:contain}.calendar .day{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;min-height:60px;height:auto;aspect-ratio:auto;padding:8px 3px}.day small{font:normal 600 clamp(10px,1.1vw,14px)/1.25 var(--serif);word-break:keep-all}.calendar .day:after{pointer-events:none}@media(max-width:600px){#book .calendar{grid-template-columns:repeat(4,minmax(0,1fr))}}</style></head><body>
+#book[data-theme=map] .book-heading,#book[data-theme=map] .book-toolbar .eyebrow{display:none}#book[data-theme=map] .noel-map-exhibit{padding:0;background:none;min-height:0}#book[data-theme=map] .village-map-image{display:block;width:100%;height:auto;max-height:78dvh;object-fit:contain}.calendar .day{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:2px;min-height:60px;height:auto;aspect-ratio:auto;padding:8px 3px}.day small{font:normal 600 clamp(10px,1.1vw,14px)/1.25 var(--serif);word-break:keep-all}.calendar .day:after{pointer-events:none}@media(max-width:600px){#book .calendar{grid-template-columns:repeat(4,minmax(0,1fr))}}</style><style id="mobile-scene-fix">/* Mobile winter scene: one continuous landscape, with proportional tree art. */
+@media(max-width:650px){
+ #site .village.calm-village{--sky:0px;--paint:100%;height:max(760px,100svh)!important;min-height:760px!important;max-height:none!important;background:#081a2c!important;overflow:hidden!important}
+ #site .village.calm-village:before{background:linear-gradient(#04142738,transparent 24%,transparent 85%,#05182725)!important;inset:0!important;height:100%!important}
+ #site .painted-scene{top:0!important;bottom:0!important;height:100%!important;background-size:auto 100%!important;background-position:50% 50%!important}
+ #site .tree-portrait{height:100%!important;background-size:auto 100%!important;background-position:50% 50%!important;mask-image:none!important}
+ #site .tree-cut{background-size:auto 100%!important;background-position:50% 50%!important}
+ #site .roof-copy{display:none!important}
+ #site .hero{padding:25px 12px 0!important;background:transparent!important;position:relative;z-index:9}
+ #site .hero .eyebrow{font-size:8px!important;letter-spacing:3px!important;margin:0 0 10px!important}
+ #site .hero h1{font-size:clamp(18px,5vw,29px)!important;line-height:1.55!important;max-width:100%!important;margin:0!important;word-break:keep-all}
+ #site .hero .english{font-size:clamp(24px,6.5vw,38px)!important;gap:56px!important;letter-spacing:1px!important;width:fit-content!important;margin:9px auto 0!important;line-height:1.3!important}
+ #site #music-open{box-sizing:border-box!important;width:36px!important;height:36px!important;min-width:36px!important;min-height:36px!important;max-width:36px!important;max-height:36px!important;aspect-ratio:1/1!important;padding:0!important;line-height:1!important;left:calc(100% + 10px)!important;top:50%!important;border-radius:50%!important;font-size:21px!important;transform:translateY(-50%)!important}
+ #site #village-menus.village-menus{inset:29% 9px 9%!important;display:grid!important;grid-template-columns:minmax(0,1fr) minmax(90px,1.55fr) minmax(0,1fr)!important;grid-template-rows:repeat(4,1fr)!important;gap:4px 0!important;align-items:center!important;background:none!important;border:0!important}
+ #site #village-menus button.village-menu:nth-child(n){background:none!important;border:0!important;box-shadow:none!important;border-radius:0!important;min-height:0!important;padding:0!important;align-self:center!important;justify-content:center!important;max-width:110px!important;filter:drop-shadow(0 2px 4px #00111c)!important}
+ #site #village-menus button.village-menu:nth-child(1){grid-area:1/1!important}
+ #site #village-menus button.village-menu:nth-child(2){grid-area:2/1!important}
+ #site #village-menus button.village-menu:nth-child(3){grid-area:3/1!important}
+ #site #village-menus button.village-menu:nth-child(4){grid-area:4/1!important}
+ #site #village-menus button.village-menu:nth-child(5){grid-area:1/3!important}
+ #site #village-menus button.village-menu:nth-child(6){grid-area:2/3!important}
+ #site #village-menus button.village-menu:nth-child(7){grid-area:3/3!important}
+ #site #village-menus button.village-menu:nth-child(8){grid-area:4/3!important}
+ #site #village-menus .magic-menu-art{width:100%!important;height:clamp(55px,16vw,86px)!important;min-height:0!important;background-size:contain!important}
+ #site #village-menus .menu-label{font-size:clamp(10px,2.65vw,13px)!important;white-space:nowrap!important;padding:4px 5px!important;line-height:1.35!important}
+ #site #village-menus small{display:none!important}
+ #site .house-knocker{top:auto!important;bottom:18px!important;left:9%!important;transform:translateX(-50%)!important;width:48px!important;height:32px!important;min-height:32px!important}
+ #site .knocker-right{left:91%!important}
+ #site .house-greeting{top:auto!important;bottom:58px!important}
+ #site .tree-sparkle-field{top:28%!important;height:62%!important;width:70%!important}
+ #site .crown-star{top:28.15%!important;font-size:24px!important}
+ #site .explore-hint{bottom:12px!important;left:20%!important;right:20%!important;width:auto!important;font-size:8px!important;line-height:1.6!important;letter-spacing:1px!important}
+}
+</style><style id="mobile-landscape-distance">
+/* Mobile landscape: pull the illustration back 12%, keeping its aspect ratio. */
+@media(max-width:650px){
+ #site .painted-scene{background-size:auto 88%!important;background-position:center bottom!important}
+ #site .tree-portrait{height:88%!important;background-size:auto 100%!important;background-position:center bottom!important}
+ #site .tree-cut{background-size:auto 100%!important;background-position:center bottom!important}
+ #site .painted-scene:before{content:"";position:absolute;z-index:3;left:0;right:0;top:12%;height:64px;background:linear-gradient(#081a2c,transparent);pointer-events:none}
+ #site .tree-sparkle-field{top:36.8%!important;height:54.6%!important}
+}
+</style></head><body>
 <canvas id="magic" aria-hidden="true"></canvas>
 <div id="intro" class="intro"><div class="intro-top"><span>NORTH POLE POST · SPECIAL DELIVERY</span><button id="skip">초대장 건너뛰기 ↗</button></div><div class="intro-stars" aria-hidden="true">✧ · · ✦ · ✧</div><div id="invitation"><p class="eyebrow">A LITTLE CHRISTMAS MAGIC, JUST FOR YOU</p><button id="envelope" aria-label="노엘의 크리스마스 초대장 열기"><span class="envelope-lining"></span><span class="envelope-front"></span><span class="envelope-flap"></span><span class="ribbon"></span><span class="seal">❄︎</span><span class="address">To. Our newest little miracle</span></button><h1 class="invitation-title">당신에게 도착한, 겨울의 편지</h1><p class="muted">봉투를 눌러 초대장을 열어보세요.</p></div><div id="letter" hidden><div class="letter-cover" aria-hidden="true"></div><span class="letter-snow"><i class="tiny-holly"></i> ❄︎ <i class="tiny-holly"></i></span><div class="letter-stickers" aria-hidden="true">
  <span class="noel-ornament noel-ribbon"></span>
